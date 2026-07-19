@@ -7,6 +7,8 @@ public class Main {
         OrderService order = new OrderService(service);
         order.placeOrder();
         OrderService order1 = new OrderService();
+
+        // using setter
         order1.setnotificatiopn(service);
         order1.placeOrder();
     }
