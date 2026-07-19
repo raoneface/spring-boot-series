@@ -6,5 +6,8 @@ public class Main {
         NotificationService service = new EmailNotification();
         OrderService order = new OrderService(service);
         order.placeOrder();
+        OrderService order1 = new OrderService();
+        order1.setnotificatiopn(service);
+        order1.placeOrder();
     }
 }
