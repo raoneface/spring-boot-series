@@ -1,11 +1,10 @@
 package in.shubham;
-
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import in.shubham.Notification.EmailNotification;
+import in.shubham.Notification.NotificationService;
 public class Main {
     public static void main(String[] args) {
-
-        OrderService order = new OrderService();
+        NotificationService service = new EmailNotification();
+        OrderService order = new OrderService(service);
         order.placeOrder();
     }
 }
