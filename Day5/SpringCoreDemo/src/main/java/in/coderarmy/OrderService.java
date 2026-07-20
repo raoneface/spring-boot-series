@@ -6,11 +6,21 @@ import org.springframework.stereotype.Component;
 @Component
 public class OrderService {
 
-    private final PaymentService service;
     @Autowired
-    OrderService(PaymentService service){
-        this.service=service;
-    }
+    private  PaymentService service;
+
+    // dependencies injection through constructor
+    //    @Autowired
+    //    OrderService(PaymentService service){
+    //        this.service=service;
+    //    }
+
+    // dependencies injection through setter
+//    @Autowired
+//    public void setPaymentService(PaymentService service){
+//        this.service = service;
+//    }
+
     public void orderService(){
         service.pay();
         System.out.println("Order service executed");
