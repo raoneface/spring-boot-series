@@ -14,18 +14,12 @@ public class Main {
         Class <Student>c1 = Student.class;
         // c1 is not an object here but is stores metadata of Studnet class and metadata cames from reflection api
 
-
-
-
-
-
         // it is a container which manage the beans and do dependencies injection
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
         // AppConfig.class --> it is reflection api
 
         OrderService order = context.getBean(OrderService.class);
         order.orderService();
-
     }
 }
 class Student{
