@@ -20,6 +20,8 @@ public class Main {
 
         OrderService order = context.getBean(OrderService.class);
         order.orderService();
+        User user1 = context.getBean(User.class);
+        user1.detail(user1);
     }
 }
 class Student{
