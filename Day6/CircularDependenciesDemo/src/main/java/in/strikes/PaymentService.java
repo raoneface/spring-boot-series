@@ -5,12 +5,13 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class PaymentService {
-    OrderService orderService;
-
     @Autowired
-    public PaymentService(OrderService orderService){
-        this.orderService = orderService;
-    }
+    private OrderService orderService;
+
+//    @Autowired
+//    public PaymentService(OrderService orderService){
+//        this.orderService = orderService;
+//    }
 
 
     public void pay(){
