@@ -10,6 +10,12 @@ public class StudentRepository {
         // save to db
         System.out.println("inside Student repository");
         System.out.println("Exiting student repository");
-        return null;
+        Student s1 = new Student();
+        s1.setName("Shubham");
+        s1.setAge(28);
+        s1.setEmail("Raoneface@gmail.com");
+        s1.setRollNo(101);
+        s1.setSubject("ml");
+        return s1;
     }
 }

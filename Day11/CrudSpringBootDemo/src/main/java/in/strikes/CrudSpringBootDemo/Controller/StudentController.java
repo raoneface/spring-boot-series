@@ -20,11 +20,11 @@ public class StudentController {
 
     // create
     @PostMapping("/create")
-    public String createstudent(@RequestBody Student student) {
+    public Student createStudent(@RequestBody Student student) {
         System.out.println("Inside Student controller");
         Student createdstudent = studentService.createStudent(student);
         System.out.println("existing student controller");
-        return "Student created";
+        return createdstudent;
     }
 
     // read

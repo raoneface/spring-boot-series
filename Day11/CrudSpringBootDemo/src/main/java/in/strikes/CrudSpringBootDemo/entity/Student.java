@@ -30,7 +30,7 @@ public class Student {
         this.id = id;
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
